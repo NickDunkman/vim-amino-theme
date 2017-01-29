@@ -36,3 +36,75 @@ Normal {
   guibg: $main-bg-color;
   guifg: $white;
 }
+
+
+// ------------------------------------------------------------------------------------------------
+//  Reset
+// ------------------------------------------------------------------------------------------------
+
+Comment { guibg: $main-bg-color; guifg: $white; }
+Error { guibg: $main-bg-color; guifg: $white; }
+Todo { guibg: $main-bg-color; guifg: $white; }
+Constant { guibg: $main-bg-color; guifg: $white; }
+Exception { guibg: $main-bg-color; guifg: $white; }
+Operator { guibg: $main-bg-color; guifg: $white; }
+Special { guibg: $main-bg-color; guifg: $white; }
+SpecialChar { guibg: $main-bg-color; guifg: $white; }
+String { guibg: $main-bg-color; guifg: $white; }
+Character { guibg: $main-bg-color; guifg: $white; }
+Number { guibg: $main-bg-color; guifg: $white; }
+Statement { guibg: $main-bg-color; guifg: $white; }
+Keyword { guibg: $main-bg-color; guifg: $white; }
+Label { guibg: $main-bg-color; guifg: $white; }
+Identifier { guibg: $main-bg-color; guifg: $white; }
+Type { guibg: $main-bg-color; guifg: $white; }
+Function { guibg: $main-bg-color; guifg: $white; }
+StorageClass { guibg: $main-bg-color; guifg: $white; }
+PreProc { guibg: $main-bg-color; guifg: $white; }
+
+ColorColumn { guibg: $main-bg-color; guifg: $white; }
+Conceal { guibg: $main-bg-color; guifg: $white; }
+Cursor { guibg: $yellow; guifg: $main-bg-color; }
+CursorIM { guibg: $main-bg-color; guifg: $white; }
+CursorColumn { guibg: $main-bg-color; guifg: $white; }
+CursorLine { guibg: $main-bg-color; guifg: $white; }
+Directory { guibg: $main-bg-color; guifg: $white; }
+DiffAdd { guibg: $main-bg-color; guifg: $white; }
+DiffChange { guibg: $main-bg-color; guifg: $white; }
+DiffDelete { guibg: $main-bg-color; guifg: $white; }
+DiffText { guibg: $main-bg-color; guifg: $white; }
+EndOfBuffer { guibg: $main-bg-color; guifg: $white; }
+ErrorMsg { guibg: $main-bg-color; guifg: $white; }
+VertSplit { guibg: $main-bg-color; guifg: $white; }
+Folded { guibg: $main-bg-color; guifg: $white; }
+FoldColumn { guibg: $main-bg-color; guifg: $white; }
+SignColumn { guibg: $main-bg-color; guifg: $white; }
+IncSearch { guibg: $main-bg-color; guifg: $white; }
+LineNr { guibg: $main-bg-color; guifg: $white; }
+CursorLineNr { guibg: $main-bg-color; guifg: $white; }
+MatchParen { guibg: $main-bg-color; guifg: $white; }
+ModeMsg { guibg: $main-bg-color; guifg: $white; }
+MoreMsg { guibg: $main-bg-color; guifg: $white; }
+NonText { guibg: $main-bg-color; guifg: $white; }
+Pmenu { guibg: $main-bg-color; guifg: $white; }
+PmenuSel { guibg: $main-bg-color; guifg: $white; }
+PmenuSbar { guibg: $main-bg-color; guifg: $white; }
+PmenuThumb { guibg: $main-bg-color; guifg: $white; }
+Question { guibg: $main-bg-color; guifg: $white; }
+Search { guibg: $main-bg-color; guifg: $white; }
+SpecialKey { guibg: $main-bg-color; guifg: $white; }
+SpellBad { guibg: $main-bg-color; guifg: $white; }
+SpellCap { guibg: $main-bg-color; guifg: $white; }
+SpellLocal { guibg: $main-bg-color; guifg: $white; }
+SpellRare { guibg: $main-bg-color; guifg: $white; }
+StatusLine { guibg: $main-bg-color; guifg: $white; }
+StatusLineNC { guibg: $main-bg-color; guifg: $white; }
+TabLine { guibg: $main-bg-color; guifg: $white; }
+TabLineFill { guibg: $main-bg-color; guifg: $white; }
+TabLineSel { guibg: $main-bg-color; guifg: $white; }
+Title { guibg: $main-bg-color; guifg: $white; }
+Visual { guibg: $main-bg-color; guifg: $white; }
+VisualNOS { guibg: $main-bg-color; guifg: $white; }
+WarningMsg { guibg: $main-bg-color; guifg: $white; }
+WildMenu { guibg: $main-bg-color; guifg: $white; }
+Scrollbar { guibg: #ff0000; guifg: #0000ff; }
