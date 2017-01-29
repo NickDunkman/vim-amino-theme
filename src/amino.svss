@@ -33,6 +33,8 @@ $bg-color-lighter-2: adjust-color($bg-color, $saturation: -30%, $lightness: +6%)
 
 $comment-color: darken($amino-slate, 40%);
 
+$string-color: adjust-color($amino-aloe, $saturation: -2%, $lightness: +2%);
+
 $error-color: $amino-red;
 
 // TODO: remove
@@ -54,6 +56,10 @@ Comment {
 ColorColumn {
   guifg: $error-color;
   guibg: $bg-color-lighter-1;
+}
+
+String {
+  guifg: $string-color;
 }
 
 // ------------------------------------------------------------------------------------------------
@@ -79,7 +85,6 @@ Exception { guibg: $bg-color; guifg: $white; }
 Operator { guibg: $bg-color; guifg: $white; }
 Special { guibg: $bg-color; guifg: $white; }
 SpecialChar { guibg: $bg-color; guifg: $white; }
-String { guibg: $bg-color; guifg: $white; }
 Character { guibg: $bg-color; guifg: $white; }
 Number { guibg: $bg-color; guifg: $white; }
 Statement { guibg: $bg-color; guifg: $white; }
