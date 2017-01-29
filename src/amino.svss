@@ -27,12 +27,13 @@ $yellow: #ffff00;
 // ------------------------------------------------------------------------------------------------
 
 $bg-color: adjust-color($amino-navy, $saturation: +4%, $lightness: -4%);
-
 $bg-color-lighter-1: adjust-color($bg-color, $saturation: -10%, $lightness: +2%);
 $bg-color-lighter-2: adjust-color($bg-color, $saturation: -30%, $lightness: +6%);
 
-$comment-color: darken($amino-slate, 40%);
+$active-bg-color: $bg-color-lighter-2;
+$active-color: $yellow;
 
+$comment-color: darken($amino-slate, 40%);
 $string-color: adjust-color($amino-aloe, $saturation: -2%, $lightness: +2%);
 
 $error-color: $amino-red;
@@ -58,6 +59,10 @@ ColorColumn {
   guibg: $bg-color-lighter-1;
 }
 
+CursorLine {
+  guibg: $active-bg-color;
+}
+
 String {
   guifg: $string-color;
 }
@@ -65,6 +70,11 @@ String {
 SpecialKey {
   guibg: $error-color;
   guifg: $white;
+}
+
+Visual {
+  guibg: $active-bg-color;
+  guifg: $active-color;
 }
 
 // ------------------------------------------------------------------------------------------------
@@ -105,7 +115,6 @@ Conceal { guibg: $bg-color; guifg: $white; }
 Cursor { guibg: $yellow; guifg: $bg-color; }
 CursorIM { guibg: $bg-color; guifg: $white; }
 CursorColumn { guibg: $bg-color; guifg: $white; }
-CursorLine { guibg: $bg-color; guifg: $white; }
 Directory { guibg: $bg-color; guifg: $white; }
 DiffAdd { guibg: $bg-color; guifg: $white; }
 DiffChange { guibg: $bg-color; guifg: $white; }
@@ -140,7 +149,6 @@ TabLine { guibg: $bg-color; guifg: $white; }
 TabLineFill { guibg: $bg-color; guifg: $white; }
 TabLineSel { guibg: $bg-color; guifg: $white; }
 Title { guibg: $bg-color; guifg: $white; }
-Visual { guibg: $bg-color; guifg: $white; }
 VisualNOS { guibg: $bg-color; guifg: $white; }
 WarningMsg { guibg: $bg-color; guifg: $white; }
 WildMenu { guibg: $bg-color; guifg: $white; }
