@@ -62,6 +62,11 @@ String {
   guifg: $string-color;
 }
 
+SpecialKey {
+  guibg: $error-color;
+  guifg: $white;
+}
+
 // ------------------------------------------------------------------------------------------------
 //  Indent Guides (https://github.com/nathanaelkane/vim-indent-guides)
 // ------------------------------------------------------------------------------------------------
@@ -125,7 +130,6 @@ PmenuSbar { guibg: $bg-color; guifg: $white; }
 PmenuThumb { guibg: $bg-color; guifg: $white; }
 Question { guibg: $bg-color; guifg: $white; }
 Search { guibg: $bg-color; guifg: $white; }
-SpecialKey { guibg: $bg-color; guifg: $white; }
 SpellBad { guibg: $bg-color; guifg: $white; }
 SpellCap { guibg: $bg-color; guifg: $white; }
 SpellLocal { guibg: $bg-color; guifg: $white; }
