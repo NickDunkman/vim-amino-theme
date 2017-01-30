@@ -18,20 +18,26 @@ $amino-orchid:   #944492;
 $amino-red:      #ef4858;
 $amino-slate:    #b9c0bb;
 
-$white: #ffffff;
-$black: #000000;
-$yellow: #ffff00;
+$yellow: #ffde00;
 
 // ------------------------------------------------------------------------------------------------
 //  Aliases
 // ------------------------------------------------------------------------------------------------
 
+$default-color: lighten($yellow, 46%);
+
+// TODO: remove this
+$white: $default-color;
+
 $bg-color: adjust-color($amino-navy, $saturation: +4%, $lightness: -4%);
 $bg-color-lighter-1: adjust-color($bg-color, $saturation: -10%, $lightness: +2%);
 $bg-color-lighter-2: adjust-color($bg-color, $saturation: -30%, $lightness: +6%);
 
-$active-bg-color: $bg-color-lighter-2;
 $active-color: $yellow;
+$active-bg-color: $bg-color-lighter-2;
+
+$highlight-color: $amino-navy;
+$highlight-bg-color: $amino-orange;
 
 $comment-color: darken($amino-slate, 40%);
 $string-color: adjust-color($amino-aloe, $saturation: -2%, $lightness: +2%);
@@ -47,7 +53,7 @@ $main-bg-color: $bg-color;
 
 Normal {
   guibg: $bg-color;
-  guifg: $white;
+  guifg: $default-color;
 }
 
 Comment {
@@ -63,13 +69,18 @@ CursorLine {
   guibg: $active-bg-color;
 }
 
+Search {
+  guibg: $highlight-bg-color;
+  guifg: $highlight-color;
+}
+
 String {
   guifg: $string-color;
 }
 
 SpecialKey {
   guibg: $error-color;
-  guifg: $white;
+  guifg: $default-color;
 }
 
 Visual {
@@ -138,7 +149,6 @@ PmenuSel { guibg: $bg-color; guifg: $white; }
 PmenuSbar { guibg: $bg-color; guifg: $white; }
 PmenuThumb { guibg: $bg-color; guifg: $white; }
 Question { guibg: $bg-color; guifg: $white; }
-Search { guibg: $bg-color; guifg: $white; }
 SpellBad { guibg: $bg-color; guifg: $white; }
 SpellCap { guibg: $bg-color; guifg: $white; }
 SpellLocal { guibg: $bg-color; guifg: $white; }
