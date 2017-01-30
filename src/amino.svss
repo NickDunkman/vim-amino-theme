@@ -92,6 +92,10 @@ Visual {
   guifg: $active-color;
 }
 
+EndOfBuffer {
+  guifg: adjust-color($amino-blue, $saturation: +10%, $lightness: -10%);
+}
+
 // ------------------------------------------------------------------------------------------------
 //  Bars
 // ------------------------------------------------------------------------------------------------
@@ -233,32 +237,31 @@ Function { guibg: $bg-color; guifg: $normal-color; }
 StorageClass { guibg: $bg-color; guifg: $normal-color; }
 PreProc { guibg: $bg-color; guifg: $normal-color; }
 
-//Conceal { guibg: $bg-color; guifg: $normal-color; }
-//CursorIM { guibg: $bg-color; guifg: $normal-color; }
-//CursorColumn { guibg: $bg-color; guifg: $normal-color; }
-//Directory { guibg: $bg-color; guifg: $normal-color; }
-//DiffAdd { guibg: $bg-color; guifg: $normal-color; }
-//DiffChange { guibg: $bg-color; guifg: $normal-color; }
-//DiffDelete { guibg: $bg-color; guifg: $normal-color; }
-//DiffText { guibg: $bg-color; guifg: $normal-color; }
-//EndOfBuffer { guibg: $bg-color; guifg: $normal-color; }
-//ErrorMsg { guibg: $bg-color; guifg: $normal-color; }
-//Folded { guibg: $bg-color; guifg: $normal-color; }
-//FoldColumn { guibg: $bg-color; guifg: $normal-color; }
-//IncSearch { guibg: $bg-color; guifg: $normal-color; }
-//ModeMsg { guibg: $bg-color; guifg: $normal-color; }
-//MoreMsg { guibg: $bg-color; guifg: $normal-color; }
-//NonText { guibg: $bg-color; guifg: $normal-color; }
-//Question { guibg: $bg-color; guifg: $normal-color; }
-//SpellBad { guibg: $bg-color; guifg: $normal-color; }
-//SpellCap { guibg: $bg-color; guifg: $normal-color; }
-//SpellLocal { guibg: $bg-color; guifg: $normal-color; }
-//SpellRare { guibg: $bg-color; guifg: $normal-color; }
-//TabLine { guibg: $bg-color; guifg: $normal-color; }
-//TabLineFill { guibg: $bg-color; guifg: $normal-color; }
-//TabLineSel { guibg: $bg-color; guifg: $normal-color; }
-//Title { guibg: $bg-color; guifg: $normal-color; }
-//VisualNOS { guibg: $bg-color; guifg: $normal-color; }
-//WarningMsg { guibg: $bg-color; guifg: $normal-color; }
-//WildMenu { guibg: $bg-color; guifg: $normal-color; }
-//Scrollbar { guibg: #ff0000; guifg: #0000ff; }
+Conceal { guibg: $bg-color; guifg: $normal-color; }
+CursorIM { guibg: $bg-color; guifg: $normal-color; }
+CursorColumn { guibg: $bg-color; guifg: $normal-color; }
+Directory { guibg: $bg-color; guifg: $normal-color; }
+DiffAdd { guibg: $bg-color; guifg: $normal-color; }
+DiffChange { guibg: $bg-color; guifg: $normal-color; }
+DiffDelete { guibg: $bg-color; guifg: $normal-color; }
+DiffText { guibg: $bg-color; guifg: $normal-color; }
+ErrorMsg { guibg: $bg-color; guifg: $normal-color; }
+Folded { guibg: $bg-color; guifg: $normal-color; }
+FoldColumn { guibg: $bg-color; guifg: $normal-color; }
+IncSearch { guibg: $bg-color; guifg: $normal-color; }
+ModeMsg { guibg: $bg-color; guifg: $normal-color; }
+MoreMsg { guibg: $bg-color; guifg: $normal-color; }
+NonText { guibg: $amino-orchid; guifg: $amino-orchid; }
+Question { guibg: $bg-color; guifg: $normal-color; }
+SpellBad { guibg: $bg-color; guifg: $normal-color; }
+SpellCap { guibg: $bg-color; guifg: $normal-color; }
+SpellLocal { guibg: $bg-color; guifg: $normal-color; }
+SpellRare { guibg: $bg-color; guifg: $normal-color; }
+TabLine { guibg: $bg-color; guifg: $normal-color; }
+TabLineFill { guibg: $bg-color; guifg: $normal-color; }
+TabLineSel { guibg: $bg-color; guifg: $normal-color; }
+Title { guibg: $bg-color; guifg: $normal-color; }
+VisualNOS { guibg: $bg-color; guifg: $normal-color; }
+WarningMsg { guibg: $bg-color; guifg: $normal-color; }
+WildMenu { guibg: $bg-color; guifg: $normal-color; }
+Scrollbar { guibg: #ff0000; guifg: #0000ff; }
