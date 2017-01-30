@@ -65,6 +65,10 @@ ColorColumn {
   guibg: $bg-color-lighter-1;
 }
 
+Cursor {
+  guibg: $yellow;
+}
+
 CursorLine {
   guibg: $active-bg-color;
 }
@@ -123,7 +127,6 @@ StorageClass { guibg: $bg-color; guifg: $white; }
 PreProc { guibg: $bg-color; guifg: $white; }
 
 Conceal { guibg: $bg-color; guifg: $white; }
-Cursor { guibg: $yellow; guifg: $bg-color; }
 CursorIM { guibg: $bg-color; guifg: $white; }
 CursorColumn { guibg: $bg-color; guifg: $white; }
 Directory { guibg: $bg-color; guifg: $white; }
