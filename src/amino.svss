@@ -68,6 +68,11 @@ CursorLine {
   guibg: $active-bg-color;
 }
 
+MatchParen {
+  guibg: $amino-orchid;
+  guifg: $white;
+}
+
 Search {
   guibg: $highlight-bg-color;
   guifg: $highlight-color;
@@ -138,7 +143,6 @@ SignColumn { guibg: $bg-color; guifg: $normal-color; }
 IncSearch { guibg: $bg-color; guifg: $normal-color; }
 LineNr { guibg: $bg-color; guifg: $normal-color; }
 CursorLineNr { guibg: $bg-color; guifg: $normal-color; }
-MatchParen { guibg: $bg-color; guifg: $normal-color; }
 ModeMsg { guibg: $bg-color; guifg: $normal-color; }
 MoreMsg { guibg: $bg-color; guifg: $normal-color; }
 NonText { guibg: $bg-color; guifg: $normal-color; }
