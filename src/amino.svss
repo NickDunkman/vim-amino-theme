@@ -93,6 +93,31 @@ Visual {
 }
 
 // ------------------------------------------------------------------------------------------------
+//  Bars
+// ------------------------------------------------------------------------------------------------
+
+$bar-bg-color: adjust-color($bg-color, $saturation: -10%, $lightness: +10%);
+
+StatusLine,
+StatusLineNC {
+  guifg: $bar-bg-color;
+}
+
+StatusLine {
+  guibg: $yellow;
+}
+
+// Status line of unfocused buffers
+StatusLineNC {
+  guibg: adjust-color($amino-orchid, $saturation: -10%, $lightness: +10%);
+}
+
+VertSplit {
+  guibg: $bar-bg-color;
+  guifg: $bar-bg-color;
+}
+
+// ------------------------------------------------------------------------------------------------
 //  Omni completion menu
 // ------------------------------------------------------------------------------------------------
 
@@ -162,7 +187,6 @@ DiffDelete { guibg: $bg-color; guifg: $normal-color; }
 DiffText { guibg: $bg-color; guifg: $normal-color; }
 EndOfBuffer { guibg: $bg-color; guifg: $normal-color; }
 ErrorMsg { guibg: $bg-color; guifg: $normal-color; }
-VertSplit { guibg: $bg-color; guifg: $normal-color; }
 Folded { guibg: $bg-color; guifg: $normal-color; }
 FoldColumn { guibg: $bg-color; guifg: $normal-color; }
 SignColumn { guibg: $bg-color; guifg: $normal-color; }
@@ -177,8 +201,6 @@ SpellBad { guibg: $bg-color; guifg: $normal-color; }
 SpellCap { guibg: $bg-color; guifg: $normal-color; }
 SpellLocal { guibg: $bg-color; guifg: $normal-color; }
 SpellRare { guibg: $bg-color; guifg: $normal-color; }
-StatusLine { guibg: $bg-color; guifg: $normal-color; }
-StatusLineNC { guibg: $bg-color; guifg: $normal-color; }
 TabLine { guibg: $bg-color; guifg: $normal-color; }
 TabLineFill { guibg: $bg-color; guifg: $normal-color; }
 TabLineSel { guibg: $bg-color; guifg: $normal-color; }
