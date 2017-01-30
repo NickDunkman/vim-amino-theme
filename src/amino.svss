@@ -218,26 +218,52 @@ IndentGuidesEven {
 }
 
 // ------------------------------------------------------------------------------------------------
+//  Syntax
+// ------------------------------------------------------------------------------------------------
+
+$keyword-color: $amino-orange;
+$variable-color: $amino-blue;
+$operator-color: $normal-color;
+
+Keyword,
+Repeat,
+Type {
+  guifg: $amino-orange;
+}
+
+Identifier {
+  guifg: $variable-color;
+}
+
+Operator {
+  guifg: $operator-color;
+}
+
+// ------------------------------------------------------------------------------------------------
+//  Python
+// ------------------------------------------------------------------------------------------------
+
+pythonStrFormatting {
+  guifg: adjust-color($amino-aloe, $saturation: -10%, $lightness: +10%);
+}
+
+// ------------------------------------------------------------------------------------------------
 //  Reset
 // ------------------------------------------------------------------------------------------------
 
-Error { guibg: $bg-color; guifg: $normal-color; }
-Todo { guibg: $bg-color; guifg: $normal-color; }
-Constant { guibg: $bg-color; guifg: $normal-color; }
-Exception { guibg: $bg-color; guifg: $normal-color; }
-Operator { guibg: $bg-color; guifg: $normal-color; }
-Special { guibg: $bg-color; guifg: $normal-color; }
-SpecialChar { guibg: $bg-color; guifg: $normal-color; }
-Character { guibg: $bg-color; guifg: $normal-color; }
-Number { guibg: $bg-color; guifg: $normal-color; }
-Statement { guibg: $bg-color; guifg: $normal-color; }
-Keyword { guibg: $bg-color; guifg: $normal-color; }
-Label { guibg: $bg-color; guifg: $normal-color; }
-Identifier { guibg: $bg-color; guifg: $normal-color; }
-Type { guibg: $bg-color; guifg: $normal-color; }
-Function { guibg: $bg-color; guifg: $normal-color; }
-StorageClass { guibg: $bg-color; guifg: $normal-color; }
-PreProc { guibg: $bg-color; guifg: $normal-color; }
+Error { guibg: $bg-color; guifg: red; }
+Todo { guibg: $bg-color; guifg: red; }
+Constant { guibg: $bg-color; guifg: white; }
+Exception { guibg: $bg-color; guifg: white; }
+Special { guibg: $bg-color; guifg: white; }
+SpecialChar { guibg: $bg-color; guifg: white; }
+Character { guibg: $bg-color; guifg: white; }
+Number { guibg: $bg-color; guifg: white; }
+Statement { guibg: $bg-color; guifg: white; }
+Label { guibg: $bg-color; guifg: red; }
+Function { guibg: $bg-color; guifg: white; }
+StorageClass { guibg: $bg-color; guifg: white; }
+PreProc { guibg: $bg-color; guifg: white; }
 
 Conceal { guibg: $bg-color; guifg: $normal-color; }
 CursorIM { guibg: $bg-color; guifg: $normal-color; }
