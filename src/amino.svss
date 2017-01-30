@@ -118,6 +118,59 @@ VertSplit {
 }
 
 // ------------------------------------------------------------------------------------------------
+//  Line numbers
+// ------------------------------------------------------------------------------------------------
+
+$line-number-bg-color: $bg-color-lighter-2;
+
+LineNr {
+  guibg: $line-number-bg-color;
+  guifg: adjust-color($line-number-bg-color, $saturation: -25%, $lightness: +25%);
+}
+
+CursorLineNr {
+  guibg: $line-number-bg-color;
+  guifg: $yellow;
+}
+
+// ------------------------------------------------------------------------------------------------
+//  Sign column
+// ------------------------------------------------------------------------------------------------
+
+$sign-column-bg-color: $bar-bg-color;
+
+SignColumn {
+  guibg: $sign-column-bg-color;
+}
+
+// ------------------------------------------------------------------------------------------------
+//  Git gutter (https://github.com/airblade/vim-gitgutter)
+// ------------------------------------------------------------------------------------------------
+
+GitGutterAdd,
+GitGutterChange,
+GitGutterDelete,
+GitGutterChangeDelete {
+  guibg: $sign-column-bg-color;
+}
+
+GitGutterAdd {
+  guifg: $amino-aloe;
+}
+
+GitGutterChange {
+  guifg: $yellow;
+}
+
+GitGutterDelete {
+  guifg: $amino-red;
+}
+
+GitGutterChangeDelete {
+  guifg: $amino-orange;
+}
+
+// ------------------------------------------------------------------------------------------------
 //  Omni completion menu
 // ------------------------------------------------------------------------------------------------
 
@@ -147,12 +200,15 @@ PmenuThumb {
 //  Indent Guides (https://github.com/nathanaelkane/vim-indent-guides)
 // ------------------------------------------------------------------------------------------------
 
+$base-indent-color: $sign-column-bg-color;
+$alt-indent-color: adjust-color($base-indent-color, $saturation: +3%, $lightness: -3%);
+
 IndentGuidesOdd {
-  guibg: $bg-color-lighter-2;
+  guibg: $base-indent-color;
 }
 
 IndentGuidesEven {
-  guibg: $bg-color-lighter-1;
+  guibg: $alt-indent-color;
 }
 
 // ------------------------------------------------------------------------------------------------
@@ -177,35 +233,32 @@ Function { guibg: $bg-color; guifg: $normal-color; }
 StorageClass { guibg: $bg-color; guifg: $normal-color; }
 PreProc { guibg: $bg-color; guifg: $normal-color; }
 
-Conceal { guibg: $bg-color; guifg: $normal-color; }
-CursorIM { guibg: $bg-color; guifg: $normal-color; }
-CursorColumn { guibg: $bg-color; guifg: $normal-color; }
-Directory { guibg: $bg-color; guifg: $normal-color; }
-DiffAdd { guibg: $bg-color; guifg: $normal-color; }
-DiffChange { guibg: $bg-color; guifg: $normal-color; }
-DiffDelete { guibg: $bg-color; guifg: $normal-color; }
-DiffText { guibg: $bg-color; guifg: $normal-color; }
-EndOfBuffer { guibg: $bg-color; guifg: $normal-color; }
-ErrorMsg { guibg: $bg-color; guifg: $normal-color; }
-Folded { guibg: $bg-color; guifg: $normal-color; }
-FoldColumn { guibg: $bg-color; guifg: $normal-color; }
-SignColumn { guibg: $bg-color; guifg: $normal-color; }
-IncSearch { guibg: $bg-color; guifg: $normal-color; }
-LineNr { guibg: $bg-color; guifg: $normal-color; }
-CursorLineNr { guibg: $bg-color; guifg: $normal-color; }
-ModeMsg { guibg: $bg-color; guifg: $normal-color; }
-MoreMsg { guibg: $bg-color; guifg: $normal-color; }
-NonText { guibg: $bg-color; guifg: $normal-color; }
-Question { guibg: $bg-color; guifg: $normal-color; }
-SpellBad { guibg: $bg-color; guifg: $normal-color; }
-SpellCap { guibg: $bg-color; guifg: $normal-color; }
-SpellLocal { guibg: $bg-color; guifg: $normal-color; }
-SpellRare { guibg: $bg-color; guifg: $normal-color; }
-TabLine { guibg: $bg-color; guifg: $normal-color; }
-TabLineFill { guibg: $bg-color; guifg: $normal-color; }
-TabLineSel { guibg: $bg-color; guifg: $normal-color; }
-Title { guibg: $bg-color; guifg: $normal-color; }
-VisualNOS { guibg: $bg-color; guifg: $normal-color; }
-WarningMsg { guibg: $bg-color; guifg: $normal-color; }
-WildMenu { guibg: $bg-color; guifg: $normal-color; }
-Scrollbar { guibg: #ff0000; guifg: #0000ff; }
+//Conceal { guibg: $bg-color; guifg: $normal-color; }
+//CursorIM { guibg: $bg-color; guifg: $normal-color; }
+//CursorColumn { guibg: $bg-color; guifg: $normal-color; }
+//Directory { guibg: $bg-color; guifg: $normal-color; }
+//DiffAdd { guibg: $bg-color; guifg: $normal-color; }
+//DiffChange { guibg: $bg-color; guifg: $normal-color; }
+//DiffDelete { guibg: $bg-color; guifg: $normal-color; }
+//DiffText { guibg: $bg-color; guifg: $normal-color; }
+//EndOfBuffer { guibg: $bg-color; guifg: $normal-color; }
+//ErrorMsg { guibg: $bg-color; guifg: $normal-color; }
+//Folded { guibg: $bg-color; guifg: $normal-color; }
+//FoldColumn { guibg: $bg-color; guifg: $normal-color; }
+//IncSearch { guibg: $bg-color; guifg: $normal-color; }
+//ModeMsg { guibg: $bg-color; guifg: $normal-color; }
+//MoreMsg { guibg: $bg-color; guifg: $normal-color; }
+//NonText { guibg: $bg-color; guifg: $normal-color; }
+//Question { guibg: $bg-color; guifg: $normal-color; }
+//SpellBad { guibg: $bg-color; guifg: $normal-color; }
+//SpellCap { guibg: $bg-color; guifg: $normal-color; }
+//SpellLocal { guibg: $bg-color; guifg: $normal-color; }
+//SpellRare { guibg: $bg-color; guifg: $normal-color; }
+//TabLine { guibg: $bg-color; guifg: $normal-color; }
+//TabLineFill { guibg: $bg-color; guifg: $normal-color; }
+//TabLineSel { guibg: $bg-color; guifg: $normal-color; }
+//Title { guibg: $bg-color; guifg: $normal-color; }
+//VisualNOS { guibg: $bg-color; guifg: $normal-color; }
+//WarningMsg { guibg: $bg-color; guifg: $normal-color; }
+//WildMenu { guibg: $bg-color; guifg: $normal-color; }
+//Scrollbar { guibg: #ff0000; guifg: #0000ff; }
