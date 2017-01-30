@@ -93,6 +93,32 @@ Visual {
 }
 
 // ------------------------------------------------------------------------------------------------
+//  Omni completion menu
+// ------------------------------------------------------------------------------------------------
+
+$pmenu-bg-color: adjust-color($amino-aloe, $saturation: +20%, $lightness: -20%);
+
+Pmenu {
+  guibg: $pmenu-bg-color;
+  guifg: $white;
+}
+
+// Selected item in the menu
+PmenuSel {
+  guibg: $amino-blue;
+}
+
+// Scrollbar
+PmenuSbar {
+  guibg: adjust-color($pmenu-bg-color, $saturation: +10%, $lightness: -10%);
+}
+
+// Scrollbar thumb
+PmenuThumb {
+  guibg: $yellow;
+}
+
+// ------------------------------------------------------------------------------------------------
 //  Indent Guides (https://github.com/nathanaelkane/vim-indent-guides)
 // ------------------------------------------------------------------------------------------------
 
@@ -146,10 +172,6 @@ CursorLineNr { guibg: $bg-color; guifg: $normal-color; }
 ModeMsg { guibg: $bg-color; guifg: $normal-color; }
 MoreMsg { guibg: $bg-color; guifg: $normal-color; }
 NonText { guibg: $bg-color; guifg: $normal-color; }
-Pmenu { guibg: $bg-color; guifg: $normal-color; }
-PmenuSel { guibg: $bg-color; guifg: $normal-color; }
-PmenuSbar { guibg: $bg-color; guifg: $normal-color; }
-PmenuThumb { guibg: $bg-color; guifg: $normal-color; }
 Question { guibg: $bg-color; guifg: $normal-color; }
 SpellBad { guibg: $bg-color; guifg: $normal-color; }
 SpellCap { guibg: $bg-color; guifg: $normal-color; }
