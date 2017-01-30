@@ -55,11 +55,6 @@ Comment {
   guifg: $comment-color;
 }
 
-ColorColumn {
-  guifg: $error-color;
-  guibg: $bg-color-lighter-1;
-}
-
 Cursor {
   guibg: $yellow;
 }
@@ -119,6 +114,13 @@ StatusLineNC {
 VertSplit {
   guibg: $bar-bg-color;
   guifg: $bar-bg-color;
+}
+
+// For highlighting the column at X chars (set X with ":set colorcolumn=X")
+ColorColumn {
+  //guibg: darken($bar-bg-color, 10%);
+  guibg: mix($bg-color, $amino-red, 80%);
+  guifg: $error-color;
 }
 
 // ------------------------------------------------------------------------------------------------
